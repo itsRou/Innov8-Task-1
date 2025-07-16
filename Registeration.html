@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <head>
+    <title>Registeration Page</title>
+    <link rel="stylesheet" href="Registeration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Registeration Form</h1>
+
+        <form action="Registeration.php" method="post">
+
+          <div class="input-group">
+
+            <div class="input-field" id="naemFiled">
+              <input type="text" placeholder="Your Name" name="Name" required />
+            </div>
+            <div class="input-field">
+              <input type="email" placeholder="Your Email" name="Email" required/>
+            </div>
+            <div class="input-field">
+              <input type="password" placeholder="password" name="Password" required/>
+            </div>
+            <div class="input-field">
+              <input type="password" placeholder="Confirm password" name="Confirm_Password" required/>
+            </div>
+
+            
+    <label>Gender</label>
+    <div class="horizontal-group">
+      <labels><input type="radio" name="gender" value="Male" > Male</labels>
+      <labels><input type="radio" name="gender" value="Female" > Female</labels>
+    </div>
+
+
+        <label>Hobbies</label>
+    <div class="horizontal-group">
+      <labels><input type="checkbox" name="hobbies[]" value="Reading"> Reading</labels>
+      <labels><input type="checkbox" name="hobbies[]" value="Traveling"> Traveling</labels>
+      <labels><input type="checkbox" name="hobbies[]" value="Sports"> Sports</labels>
+    </div>
+
+    
+        <label>Country</label>
+           
+     <select name="country" required>
+        <option value="">Select</option>
+       <option value="Egypt">Egypt</option>
+                <option value="KSA">KSA</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+        </select>
+
+
+          <div class="btn-field">
+            <button type="submit" id="Confirmbtn">Confirm</button>
+            </button>
+          </div>
+                    </div>
+
+
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
